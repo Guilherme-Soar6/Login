@@ -1,0 +1,112 @@
+* {
+   font-family: Helvetica;
+   margin: 0; 
+   padding: 0;
+   box-sizing: border-box;
+   color: #fff;
+   border: none;
+}
+
+input, label{
+    display: block;
+    width: 100%;
+}
+
+input:focus, label:focus{
+    outline: none;
+}
+
+a{
+    color: deepskyblue;
+}
+
+body{
+    padding-top: 5vh;
+    background-image: url('../imagens/eclipse.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#container{
+    width: 500px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+#container h1{
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.6rem;
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#full-box{
+    flex: 1 1 100%;
+    position: relative;
+}
+
+.half-box{
+    flex: 1 1 45%;
+    position: relative;
+}
+
+.spacing{
+    margin-right: 2.5%;
+}
+
+label{
+    font-weight: bold;
+    font-size: .8em;
+}
+
+input{
+    border-bottom: 2px solid #323232;
+    padding: 10px;
+    font-size: .9em;
+    margin-bottom: 40px;
+    background-color: rgba(0, 0, 0, 0.5);;
+}
+
+input:focus{
+    border-color: deepskyblue;
+}
+
+input[type='button']{
+    background-color: deepskyblue;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+#agreement{
+    margin-right: 5px;
+}
+
+#agreement, #agreement-label {
+    display: inline-block;
+    width: auto;
+}
+
+.error-validation{
+    color: #e60000;
+    position: absolute;
+    top: 57px;
+    font-size: .8em;
+}
+
+.template{
+    display: none;
+}

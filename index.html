@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de cadastro</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/003958cc95.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="container">
+        <h1>Cadastra-se agora</h1>
+        <form id="register">
+            <div id="full-box">
+                <label for="email"></label>
+                <input type="email" name="email" id="email" placeholder="Digite seu e-email" data-min-length="3">
+            </div>
+
+            <div id="full-box">
+                <label for="name"></label>
+                <input type="text" name="name" id="name" placeholder="Digite seu nome">
+            </div>
+
+            <div id="half-box spacing">
+                <label for="senha"></label>
+           
+                <input type="password" name="senha" id="senha" placeholder="Digite sua senha">
+            </div> 
+
+            <div id="half-box">
+                <label for="senha-confirm"></label>
+                <input type="password" name="senha-confirm" id="senha-confirm" placeholder="Confirme sua senha">
+            </div>
+
+            <div id="full-box">
+                <input type="checkbox" name="agreement" id="agreement">
+                <label for="agreement" id="agreement">Li e aceito os <a href="#">termos de uso</a></label>
+            </div>
+
+            <div id="full-box">
+                <input type="button" id="btn-submit" value="Registrar" onclick="clicou()">
+            </div>
+
+            <p class="error-validation template"></p>
+        </form>
+        </div>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
